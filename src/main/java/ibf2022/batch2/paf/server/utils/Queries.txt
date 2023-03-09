@@ -1,0 +1,31 @@
+
+
+Task 2
+getCuisine()
+
+db.restaurants.distinct("cuisine")
+
+
+Task 3
+getRestaurantByCuisine()
+
+db.restaurants.find({'cuisine': 'African'}).sort({name: 1});
+
+Task 4
+getRestaurantById()
+
+db.restaurants.find({'restaurant_id':'30075445'})
+
+Task 5
+getRestaurantComment()
+
+db.comments.insertOne({
+		"restaurant_id" : "40368021",
+		"name" : "Fred",
+		"rating" : 5,
+		"comment" : "makan",
+		"date" : 1678338926438
+	 	})
+
+To check for previous comments
+db.comments.find({'restaurant_id': '40356068'});

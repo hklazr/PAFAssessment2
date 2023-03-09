@@ -1,0 +1,1 @@
+TODO: Task 1 - mongoimport --db makan --collection restaurants --file json/restaurants.json --jsonArray
